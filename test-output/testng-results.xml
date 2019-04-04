@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5801" started-at="2019-04-04T00:45:47Z" finished-at="2019-04-04T00:45:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5801" started-at="2019-04-04T00:45:47Z" finished-at="2019-04-04T00:45:53Z">
+      <class name="test.GlobalParameters">
+        <test-method status="PASS" signature="Login_GlobalPara()[pri:0, instance:test.GlobalParameters@d2cc05a]" name="Login_GlobalPara" is-config="true" duration-ms="5163" started-at="2019-04-04T00:45:47Z" finished-at="2019-04-04T00:45:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_GlobalPara -->
+        <test-method status="PASS" signature="GlobalPara_A_Test()[pri:0, instance:test.GlobalParameters@d2cc05a]" name="GlobalPara_A_Test" duration-ms="9" started-at="2019-04-04T00:45:52Z" finished-at="2019-04-04T00:45:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GlobalPara_A_Test -->
+        <test-method status="PASS" signature="GlobalPara_B_Test()[pri:0, instance:test.GlobalParameters@d2cc05a]" name="GlobalPara_B_Test" duration-ms="0" started-at="2019-04-04T00:45:52Z" finished-at="2019-04-04T00:45:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GlobalPara_B_Test -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:test.GlobalParameters@d2cc05a]" name="CloseBrowser" is-config="true" duration-ms="577" started-at="2019-04-04T00:45:52Z" finished-at="2019-04-04T00:45:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- test.GlobalParameters -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

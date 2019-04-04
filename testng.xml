@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Dept" parallel="tests" thread-count="6">
+
+	<listeners>
+		<listener class-name="test.ListenersTestNG" />
+	
+	</listeners>
+	
+	<parameter name="URL" value="http://www.google.ca" />	<!-- here parameter can put in test, etc., -->
+	<parameter name="APIKey/username" value="testadmin123" />
+
+	<test name="Personal Load Test">
+	
+		<classes>
+			<class name="test.Class1" />
+			<class name="test.Class2" >
+				<methods>
+					<include name="Demo3" />
+					<include name="Demo4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Car loan">
+		<classes>
+			<class name="test.Class3" />
+				
+			<class name="test.Class4">
+				<!-- <methods>
+					<exclude name="Mobile.*"/>
+				</methods> -->				
+			</class>
+		</classes>
+
+	</test>
+
+</suite>

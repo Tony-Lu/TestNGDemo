@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" guice-stage="DEVELOPMENT" name="Failed suite [Loan Dept]" parallel="tests">
+  <parameter name="APIKey/username" value="testadmin123"/>
+  <parameter name="URL" value="http://www.google.ca"/>
+  <listeners>
+    <listener class-name="test.ListenersTestNG"/>
+  </listeners>
+  <test thread-count="6" name="Car loan(failed)" parallel="tests">
+    <classes>
+      <class name="test.Class3">
+        <methods>
+          <include name="MobileTest2"/>
+          <include name="BeforeSuiteTest"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- test.Class3 -->
+    </classes>
+  </test> <!-- Car loan(failed) -->
+</suite> <!-- Failed suite [Loan Dept] -->
