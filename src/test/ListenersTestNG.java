@@ -5,7 +5,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class ListenersTestNG implements ITestListener {  //No.139
-
+	TakeScreenshotOnFailure b = new TakeScreenshotOnFailure();  // here should import from TestBase!
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -23,8 +23,10 @@ public class ListenersTestNG implements ITestListener {  //No.139
 		// TODO Auto-generated method stub
 		// take screenshot
 		//response if API is failed
+		String failTestName = result.getName();
+		System.out.println("test failed executed = listener pass code! ====== The test name is: " + failTestName);
 		
-		System.out.println("test failed executed = listener pass code! ====== The test name is: " + result.getName());
+		b.TakeScreenshotOnFailure(failTestName);
 	}
 
 	@Override
